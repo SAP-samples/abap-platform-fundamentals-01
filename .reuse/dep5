@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: abap-platform-fundamentals-01
-Upstream-Contact: andre.fischer@sap.com
+Upstream-Contact: safa.golrokh.bahoosh@sap.com
 Source: https://github.com/sap-samples/abap-platform-fundamentals-01
 Disclaimer: The code in this project may include calls to APIs (“API Calls”) of
  SAP or third-party products or services developed outside of this project
