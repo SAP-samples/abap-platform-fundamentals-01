@@ -19,6 +19,8 @@ For specific requirements see the readme documents that are part of the aforemen
 
 ## Download and Installation
 
+Download the ABAP Development Tools as described [here](https://tools.hana.ondemand.com/#abap).
+
 ## Known Issues
 
 There are no known issues.
