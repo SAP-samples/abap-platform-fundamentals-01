@@ -1,5 +1,5 @@
-"! <p class="shorttext synchronized" lang="en">The window frame specification</p>
-"! Demonstrates the ASQL window frame specification
+"! <p class="shorttext synchronized" lang="en">ABAP program to simulate windowing</p>
+"! Demonstrates windowing in ABAP SQL
 class ybw_windowing_abap definition
   public
   final
@@ -24,35 +24,34 @@ class ybw_windowing_abap implementation.
     " Only the top 10 parties with the highest votes should be selected
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-    " build projection and limit result to 10
     select from ybw_votes_party
            fields area,
                   party,
-                  votes
-           into table @data(result)
-           up to 10 rows.   " <------------------------------
-    out->write( result ).
-
-    " show parties with highest votes on top
-    select from ybw_votes_party
-           fields area,
-                  party,
-                  votes
-           order by votes descending   " <------------------------------
-           into table @data(result2)
-           up to 10 rows.
-    out->write( result2 ).
-
-    " sum votes per area and party
-    select from ybw_votes_party
-           fields area,
-                  party,
-                  sum( votes ) as votes  " <------------------------------
-           group by area, party  " <------------------------------
+                  sum( votes ) as votes,
+                  int8`0` as overall_votes
+           where area <> 'Bundesgebiet'
+           group by area, party
            order by votes descending
-           into table @data(result3)
+           into table @data(result)
            up to 10 rows.
-    out->write( result3 ).
+
+    select from ybw_votes_party
+           fields party, sum( votes ) as votes
+           where area <> 'Bundesgebiet'
+           group by party
+           into table @data(overall_votes).
+
+    loop at result assigning field-symbol(<fs>).
+      read table overall_votes with key party = <fs>-Party into data(wa).
+      if sy-subrc = 0.
+        <fs>-overall_votes = wa-votes.
+      else.
+        <fs>-overall_votes = 0.
+      endif.
+    endloop.
+
+    cl_demo_output=>write_data( result ).
+    cl_demo_output=>display( ).
   endmethod.
 
 endclass.

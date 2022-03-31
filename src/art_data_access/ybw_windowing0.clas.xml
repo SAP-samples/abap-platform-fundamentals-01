@@ -5,7 +5,7 @@
    <VSEOCLASS>
     <CLSNAME>YBW_WINDOWING0</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>The window frame specification</DESCRIPT>
+    <DESCRIPT>Windowing: OVER clause</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>
