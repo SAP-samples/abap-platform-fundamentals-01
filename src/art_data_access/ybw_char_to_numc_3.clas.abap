@@ -1,5 +1,8 @@
 "! <p class="shorttext synchronized" lang="en">Convert C to N</p>
 "! This program demonstrates the conversion from char data to numc
+"!
+"! Please execute the class in the eclipse editor aka. ADT with shortcut F9.
+"! The result will be displayed in the console
 class ybw_char_to_numc_3 definition
   public
   final

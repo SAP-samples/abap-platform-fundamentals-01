@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>YBW_WINDOWING4</CLSNAME>
+    <CLSNAME>YBW_CTE</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>Windowing: let the database do the work</DESCRIPT>
+    <DESCRIPT>Demo CTE</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>

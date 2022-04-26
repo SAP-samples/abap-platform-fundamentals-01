@@ -1,6 +1,8 @@
 "! <p class="shorttext synchronized" lang="en">code completion</p>
+"!
 "! Here we would like to demonstrate the ABAP SQL code completion
 "! and how to best use it.
+"!
 class ybw_tipps0 definition
   public
   final

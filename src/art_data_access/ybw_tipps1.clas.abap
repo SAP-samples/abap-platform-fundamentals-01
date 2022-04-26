@@ -1,6 +1,9 @@
 "! <p class="shorttext synchronized" lang="en">Existence check</p>
-"! This example demonstrates that best practices
-"! to do an existence check with ABAP SQL
+"!
+"! This example demonstrates an efficient way to do an existence check with ABAP SQL
+"!
+"! Please execute the class in the eclipse editor aka. ADT with shortcut F9.
+"! The result will be displayed in the console
 class ybw_tipps1 definition
   public
   final

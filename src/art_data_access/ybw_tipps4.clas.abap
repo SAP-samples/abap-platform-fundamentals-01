@@ -1,4 +1,7 @@
 "! <p class="shorttext synchronized" lang="en">Buffered table</p>
+"!
+"! Please execute the class in the eclipse editor aka. ADT with shortcut F9.
+"! The result will be displayed in the console
 class ybw_tipps4 definition
   public
   final

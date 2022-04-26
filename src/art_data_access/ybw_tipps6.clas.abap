@@ -1,6 +1,17 @@
 "! <p class="shorttext synchronized" lang="en">Look closely</p>
-"! This example show cases a DBSQL_INVALID_CURSOR runtime error
-"! and how to analyze it.
+"!
+"! This example was used to demonstrate how a DBSQL_INVALID_CURSOR runtime error
+"! can be analyzed. We used tools like ST05 and the trace point feature of the ABAP
+"! In Eclipse editor to find the root cause. Did you spot the implicit commit that
+"! did close the db cursor?
+"!
+"! Also another nasty bug is hidden in one of the constants. Use the hex view of
+"! the debugger to see the difference.
+"!
+"! HINT: sometimes an 'a' is not 'a' :)
+"!
+"! Please execute the class in the eclipse editor aka. ADT with shortcut F9.
+"! The result will be displayed in the console
 class ybw_tipps6 definition
   public
   final

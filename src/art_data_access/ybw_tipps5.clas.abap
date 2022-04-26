@@ -1,5 +1,8 @@
 "! <p class="shorttext synchronized" lang="en">New SQL syntax</p>
 "! Demonstrate better syntax checks for new SQL syntax
+"!
+"! Please execute the class in the eclipse editor aka. ADT with shortcut F9.
+"! The result will be displayed in the console
 class ybw_tipps5 definition
   public
   final
