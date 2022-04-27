@@ -1,4 +1,4 @@
-# Sample code snippets for ABAP educational online sesssions
+# Sample code snippets for ABAP educational online sessions
 <!--- Register repository https://api.reuse.software/register, then add REUSE badge:
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/REPO-NAME)](https://api.reuse.software/info/github.com/SAP-samples/REPO-NAME)
 -->
@@ -20,6 +20,39 @@ For specific requirements see the readme documents that are part of the aforemen
 ## Download and Installation
 
 Download the ABAP Development Tools as described [here](https://tools.hana.ondemand.com/#abap).
+
+## Package ABAP SQL – the art of accessing data 
+
+The package contains the examples / demos which have been demonstrated during the talk. The package can be installed with abapGit. After the installation you should be able to find the YBW_* classes and tables in your system. Please note that you need to load data into the YBW_... tables before executing the examples will produce valuable results. Data can be loaded by executing class YBW_LOAD_DATA in your ABAP in Eclipse editor. Just load the source code of the class with STRG+A. You can now execute the program by hitting the F9 key.
+
+Session part 1:
+- YBW_JOIN
+- YBW_UNION
+- YBW_INTERSECT
+- YBW_EXCEPT
+- YBW_CTE
+- YBW_TIPPS0
+- YBW_TIPPS1
+- YBW_TIPPS2
+- YBW_TIPPS3
+
+Session part 2:
+- YBW_WINDOWING0
+- YBW_WINDOWING1
+- YBW_WINDOWING2
+- YBW_WINDOWING3
+- YBW_WINDOWING4
+- YBW_WINDOWING_ABAP
+- YBW_CHAR_TO_NUMC_1
+- YBW_CHAR_TO_NUMC_2
+- YBW_CHAR_TO_NUMC_3
+- YBW_CHAR_TO_NUMC_4
+- YBW_CHAR_TO_NUMC_5
+- YBW_CHAR_TO_NUMC_6
+- YBW_TIPPS4
+- YBW_TIPPS5
+- YBW_TIPPS6
+- YBW_CANDIDATE_MANAGER
 
 ## Known Issues
 
