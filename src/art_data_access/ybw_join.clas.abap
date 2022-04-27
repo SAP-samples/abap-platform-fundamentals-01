@@ -23,13 +23,13 @@ class ybw_join implementation.
                 ybw_vote~vote = '1' and
                 ybw_vote~votes > 0 and
                 ybw_vote~party like 'P%' and
-                ybw_party~kind  = 'PARTEI' and
+                ybw_party~kind  = 'Partei' and
                 ybw_party~short_name like 'P%'
-           fields distinct party as partei
-           order by partei
+           fields distinct party as partei_name
+           order by partei_name
            into table @data(join_result).
-    out->write( join_result ).
     assert join_result = ybw_intersect=>execute_intersect( ).
+    out->write( join_result ).
   endmethod.
 
 endclass.

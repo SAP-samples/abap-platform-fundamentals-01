@@ -42,7 +42,7 @@ class ybw_union implementation.
     into table @data(result).
 
     out->write( result ).
-    out->write( lines( result ) ).
+    out->write( |{ lines( result ) } lines selected.| ).
   endmethod.
 
 endclass.

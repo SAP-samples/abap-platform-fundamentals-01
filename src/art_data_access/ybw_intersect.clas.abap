@@ -33,21 +33,21 @@ class ybw_intersect implementation.
     " selects all parties or persons from the vote table
     " whose first vote is larger than 0
     select from ybw_vote
-           fields distinct party as partei
+           fields distinct party as partei_name
            where vote = '1' and
                  votes > 0 and
                  party like 'P%'
-           order by partei
+           order by partei_name
            into table @data(parties_of_vote_table).
     out->write( 'parties_of_vote_table:' ).
     out->write( parties_of_vote_table ).
 
     " selects only real parties from the party table
     select from ybw_party
-           fields distinct short_name as partei
-           where kind = 'PARTEI' and
+           fields distinct short_name as partei_name
+           where kind = 'Partei' and
                  short_name like 'P%'
-           order by partei
+           order by partei_name
     into table @data(parties).
     out->write( '---------------------------------------------------------' ).
     out->write( 'parties:' ).
@@ -63,16 +63,16 @@ class ybw_intersect implementation.
 
   method execute_intersect.
     select from ybw_vote
-           fields distinct party as partei
+           fields distinct party as partei_name
            where vote = '1' and
                  votes > 0 and
                  party like 'P%'
     intersect
     select from ybw_party
-           fields distinct short_name as partei
-           where kind = 'PARTEI' and
+           fields distinct short_name as partei_name
+           where kind = 'Partei' and
                  short_name like 'P%'
-    order by partei
+    order by partei_name
     into table @rt_intersect.
   endmethod.
 
