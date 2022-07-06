@@ -23,6 +23,10 @@ For specific requirements see the readme documents that are part of the aforemen
 
 Download the ABAP Development Tools as described [here](https://tools.hana.ondemand.com/#abap).
 
+Import the source code either using the ABAPGIT report into on prem system or use the ABAPGit Plugin of ADT to import it into a Steampunk system.
+
+Create a package (e.g. ``TEST_DSAG01` or `Z_DSAG01`) where the package name must not exceed 11 characters since the package uses prefix folder logic.
+
 ## Package ABAP SQL – the art of accessing data 
 
 The package contains the examples / demos which have been demonstrated during the talk. The package can be installed with abapGit. After the installation you should be able to find the YBW_* classes and tables in your system. Please note that you need to load data into the YBW_... tables before executing the examples will produce valuable results. Data can be loaded by executing class YBW_LOAD_DATA in your ABAP in Eclipse editor. Just load the source code of the class with STRG+A. You can now execute the program by hitting the F9 key.
