@@ -74,6 +74,17 @@ Contents:
 - z_demo_entity_buffer CDS view entity for buffering
 - z_demo_calculated_quantity: CDS view entity, demo for calculated quantity
 
+A CDS entity buffer is a new kind of repository object of the technical type DTEB. This type of object is currently not supported in abapGit. To get the demo that was shown in the talk, proceed as follows:
+•	Right-click on the CDS view entity z_demo_entity_buffer and choose New Entity Buffer.
+•	Insert a name, for example z_demo_entity_buffer, and type a description.
+•	Paste the following source code:
+  <pre>define view entity buffer on z_demo_entity_buffer
+       layer core
+       type generic number of key elements 1
+       </pre>
+•	Activate the entity buffer.
+
+
 ## Known Issues
 
 There are no known issues.
