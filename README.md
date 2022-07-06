@@ -10,6 +10,7 @@
 This repository contains several packages. Each package contains sample code snippets (ABAP, CDS, SQL) that has been presented in various educational online sessions. 
 
 - ABAP SQL – the art of accessing data 
+- A new generation of CDS views - CDS view entities
 - ABAP RESTful Application Programming Model - Fundamentals (planned)
 - ABAP RESTful Application Programming Model - Entity Manipulation Language (planned)
 
@@ -26,6 +27,7 @@ Download the ABAP Development Tools as described [here](https://tools.hana.ondem
 Import the source code either using the ABAPGIT report into on prem system or use the ABAPGit Plugin of ADT to import it into a Steampunk system.
 
 Create a package (e.g. ``TEST_DSAG01` or `Z_DSAG01`) where the package name must not exceed 11 characters since the package uses prefix folder logic.
+
 
 ## Package ABAP SQL – the art of accessing data 
 
@@ -59,6 +61,18 @@ Session part 2:
 - YBW_TIPPS5
 - YBW_TIPPS6
 - YBW_CANDIDATE_MANAGER
+
+## Package A new generation of CDS views - CDS view entities
+
+The package contains the examples / demos which have been demonstrated during the talk. The package can be installed with abapGit. After the installation you should be able to find the Z_* CDS views and CDS tuning objects in your system. 
+
+Contents:
+- z_classic_view: CDS DDIC-based view
+- z_view_extension: CDS view extension
+- z_demo_no_1: CDS view entity
+- z_view_entity_extension: CDS view entity extension
+- z_demo_entity_buffer CDS view entity for buffering
+- z_demo_calculated_quantity: CDS view entity, demo for calculated quantity
 
 ## Known Issues
 
