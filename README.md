@@ -11,6 +11,7 @@ This repository contains several packages. Each package contains sample code sni
 
 - ABAP SQL – the art of accessing data 
 - A new generation of CDS views - CDS view entities
+- Why don't these tests run? The issue with test isolation and how it can be solved
 - ABAP RESTful Application Programming Model - Fundamentals (planned)
 - ABAP RESTful Application Programming Model - Entity Manipulation Language (planned)
 
@@ -84,6 +85,31 @@ A **CDS entity buffer** is a new kind of repository object of the technical type
        type generic number of key elements 1
        </pre>
 •	Activate the entity buffer.
+
+
+## Package "Why don't these tests run? The issue with test isolation and how it can be solved"
+
+The package contains the examples / demos which have been demonstrated during the talk. The package can be installed with abapGit. After the installation you should be able to find the Z-classes, interfaces and a CDS entity in your system. 
+
+- zms_cds_entity.ddls.asddls
+- zms_cds_entity.ddls.baseinfo
+- zms_cds_entity.ddls.xml
+- zmscl_code_under_test.clas.abap
+- zmscl_code_under_test.clas.testclasses.abap
+- zmscl_code_under_test.clas.xml
+- zmscl_depended_on_component.clas.abap
+- zmscl_depended_on_component.clas.xml
+- zmscl_factory.clas.abap
+- zmscl_factory.clas.xml
+- zmscl_internal_incident.clas.abap
+- zmscl_internal_incident.clas.testclasses.abap
+- zmscl_internal_incident.clas.xml
+- zmsif_code_under_test.intf.abap
+- zmsif_code_under_test.intf.xml
+- zmsif_depended_on_component.intf.abap
+- zmsif_depended_on_component.intf.xml
+- zmsth_injector.clas.abap
+- zmsth_injector.clas.xml
 
 
 ## Known Issues
