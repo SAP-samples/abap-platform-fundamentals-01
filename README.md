@@ -89,7 +89,7 @@ A **CDS entity buffer** is a new kind of repository object of the technical type
 
 ## Package "Why don't these tests run? The issue with test isolation and how it can be solved"
 
-The package contains the examples / demos which have been demonstrated during the talk. The package can be installed with abapGit. After the installation you should be able to find the Z-classes, interfaces and a CDS entity in your system. 
+The package contains the examples / demos which have been demonstrated during the talk. The package can be installed with abapGit. After the installation you should be able to find the Z-classes, interfaces and a CDS entity in your system. Registered DSAGNet-members can see the details of the event here: https://dsagnet.de/dsag-event?id=357108&app=info
 
 - zms_cds_entity.ddls.asddls
 - zms_cds_entity.ddls.baseinfo
