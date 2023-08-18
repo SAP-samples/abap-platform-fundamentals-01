@@ -11,7 +11,7 @@ This repository contains several packages. Each package contains sample code sni
 
 - ABAP SQL – the art of accessing data 
 - A new generation of CDS views - CDS view entities
-- Why don't these tests run? The issue with test isolation and how it can be solved
+- Why aren't my tests stable? Test Isolation with the ABAP Unit Framework
 - ABAP RESTful Application Programming Model - Fundamentals (planned)
 - ABAP RESTful Application Programming Model - Entity Manipulation Language (planned)
 
