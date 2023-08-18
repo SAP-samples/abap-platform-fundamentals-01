@@ -87,9 +87,9 @@ A **CDS entity buffer** is a new kind of repository object of the technical type
 •	Activate the entity buffer.
 
 
-## Package "Why don't these tests run? The issue with test isolation and how it can be solved"
+## Package "Why aren't my tests stable? Test Isolation with the ABAP Unit Framework"
 
-The subfolder src/test_isolation contains the examples which have been demonstrated during the presentations at DSAG and the global user groups. It will be also enhanced once there are new test frameworks available.
+The subfolder src/test_isolation contains the examples which have been demonstrated during the presentations at DSAG and the [global user groups](https://www.youtube.com/live/Duwd6Du7lM0?feature=share). It will be also enhanced once there are new test frameworks available. 
 
 ### The Idea
 The idea of this folder is to show how to use any test environment, helper class and some common design patterns that help with isolating your code under test from its depended-on components.
