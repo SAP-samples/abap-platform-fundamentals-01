@@ -3,7 +3,7 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOINTERF>
-    <CLSNAME>ZMSIF_CODE_UNDER_TEST</CLSNAME>
+    <CLSNAME>ZATI_IF_CODE_UNDER_TEST</CLSNAME>
     <LANGU>E</LANGU>
     <DESCRIPT>Code Under Test</DESCRIPT>
     <EXPOSURE>2</EXPOSURE>
